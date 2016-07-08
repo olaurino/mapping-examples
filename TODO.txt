@@ -1,0 +1,16 @@
+GL
+1. make proposal for first "final" votable extension schema (likely VOTable-1.3_vodml.xsd) DONE
+2. ensure consistent with the proposed first "final" mapping document. IN PROGRESS
+3. check vo-dml: model used in anotations.
+TD
+1. design serialisation format for VO-DML model instance documents
+2. start syntax recognizer based on VOTable-1.3_vodml.xsd
+
+GL+TD
+1. Decide on sample files following this schema extension (likely based on 2mass_sdss_source.votable.xml"
+  - validate it wrt schema! IN PROGRESS
+2. Decide on sample (Source) data model, 
+  - Should be correct wrt latest VO-DML. TBD
+
+3. validator of GROUP content ts
+4. write parsers that interpret sample votable docs into ??????  
