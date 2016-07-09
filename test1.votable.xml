@@ -13,7 +13,7 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vo-dml:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="https://volute.googlecode.com/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml">
+			value="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml">
 			<VODML><ROLE>vo-dml:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		<PARAM name="name" datatype="char" arraysize="*" value="ivoa">
@@ -23,7 +23,7 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vo-dml:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="https://volute.googlecode.com/svn/trunk/projects/dm/vo-dml/models/vo-dml/VO-DML.vo-dml.xml">
+			value="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vo-dml/VO-DML.vo-dml.xml">
 			<VODML><ROLE>vo-dml:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		<PARAM name="name" datatype="char" arraysize="*" value="vo-dml">
@@ -33,7 +33,7 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vo-dml:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="https://volute.googlecode.com/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
+			value="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
 			<VODML><ROLE>vo-dml:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		<PARAM name="name" datatype="char" arraysize="*" value="photdm-alt">
@@ -43,7 +43,7 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vo-dml:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="https://volute.googlecode.com/svn/trunk/projects/dm/vo-dml/models/source/SourceDM.vo-dml.xml">
+			value="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/source/SourceDM.vo-dml.xml">
 			<VODML><ROLE>vo-dml:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		<PARAM name="name" datatype="char" arraysize="*" value="src">
