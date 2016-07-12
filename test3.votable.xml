@@ -84,12 +84,12 @@
 
 		<GROUP ID="_2mass">
 			<VODML>
-				<TYPE>photdm-alt:PhotometryicSystem</TYPE>
+				<TYPE>photdm-alt:PhotometricSystem</TYPE>
 			</VODML>
 			<PARAM name="description" datatype="char" arraysize="*" value="The 2MASS phtometric system, consisting of 3 bands"></PARAM>
 			<GROUP ID="_2massJ">
 				<VODML>
-					<ROLE>photdm-alt:PhotometryicSystem.photometryFilter</ROLE>
+					<ROLE>photdm-alt:PhotometricSystem.photometryFilter</ROLE>
 					<TYPE>photdm-alt:PhotometryFilter</TYPE>
 				</VODML>
 				<PARAM name="name" datatype="char" value="J">
@@ -112,7 +112,7 @@
 			<!-- spectralLocation serialized as GROUP -->
 			<GROUP ID="_2massH">
 				<VODML>
-					<ROLE>photdm-alt:PhotometryicSystem.photometryFilter</ROLE>
+					<ROLE>photdm-alt:PhotometricSystem.photometryFilter</ROLE>
 					<TYPE>photdm-alt:PhotometryFilter</TYPE>
 				</VODML>
 				<PARAM name="name" datatype="char" value="H">
