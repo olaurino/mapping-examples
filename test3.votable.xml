@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Standalore instances from Photdm-alt data model. Secial features: - standalone instances of objecttype - ivoa:quantity.RealQuantity 
+	serializing to PARAM (implicit use of PARAM@unit) and explicitly to GROUP -->
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3_vodml">
+	<!-- Declaration of VO-DML modes that are used in this annotated VOTable. See $7.1. -->
+	<!-- Import vodml-map model -->
+	<GROUP>
+		<VODML>
+			<TYPE>vodml-map:Model</TYPE>
+		</VODML>
+
+		<PARAM name="url" datatype="char" arraysize="*"
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml">
+			<VODML>
+				<ROLE>vodml-map:Model.url</ROLE>
+				<TYPE>ivoa:anyURI</TYPE>
+			</VODML>
+		</PARAM>
+
+		<PARAM name="name" datatype="char" arraysize="*" value="vodml-map">
+			<VODML>
+				<ROLE>vodml-map:Model.name</ROLE>
+				<TYPE>ivoa:string</TYPE>
+			</VODML>
+		</PARAM>
+
+	</GROUP>
+
+	<!-- Import ivoa model -->
+	<GROUP>
+		<VODML>
+			<TYPE>vodml-map:Model</TYPE>
+		</VODML>
+
+		<PARAM name="name" datatype="char" arraysize="*" value="ivoa">
+			<VODML>
+				<ROLE>vodml-map:Model.name</ROLE>
+				<TYPE>ivoa:string</TYPE>
+			</VODML>
+		</PARAM>
+
+		<PARAM name="url" datatype="char" arraysize="*"
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml">
+			<VODML>
+				<ROLE>vodml-map:Model.url</ROLE>
+				<TYPE>ivoa:anyURI</TYPE>
+			</VODML>
+		</PARAM>
+
+	</GROUP>
+
+
+	<!-- Import photdm-alt model -->
+	<GROUP>
+		<VODML>
+			<TYPE>vodml-map:Model</TYPE>
+		</VODML>
+		<PARAM name="url" datatype="char" arraysize="*"
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
+			<VODML>
+				<ROLE>vodml-map:Model.url</ROLE>
+				<TYPE>ivoa:anyURI</TYPE>
+			</VODML>
+		</PARAM>
+
+		<PARAM name="identifier" datatype="char" arraysize="*" value="ivo://ivoa.org/dm/PhotDM-alt/1.9">
+			<VODML>
+				<ROLE>vodml-map:Model.identifier</ROLE>
+				<TYPE>ivoa:anyURI</TYPE>
+			</VODML>
+		</PARAM>
+
+		<PARAM name="name" datatype="char" arraysize="*" value="photdm-alt">
+			<VODML>
+				<ROLE>vodml-map:Model.name</ROLE>
+				<TYPE>ivoa:string</TYPE>
+			</VODML>
+		</PARAM>
+	</GROUP>
+
+
+	<RESOURCE ID="photometry_system">
+
+
+		<GROUP ID="_2mass">
+			<VODML>
+				<TYPE>photdm-alt:PhotometryicSystem</TYPE>
+			</VODML>
+			<PARAM name="description" datatype="char" arraysize="*" value="The 2MASS phtometric system, consisting of 3 bands"></PARAM>
+			<GROUP ID="_2massJ">
+				<VODML>
+					<ROLE>photdm-alt:PhotometryicSystem.photometryFilter</ROLE>
+					<TYPE>photdm-alt:PhotometryFilter</TYPE>
+				</VODML>
+				<PARAM name="name" datatype="char" value="J">
+					<VODML>
+						<ROLE>photdm-alt:PhotometryFilter.name</ROLE>
+					</VODML>
+				</PARAM>
+				<PARAM name="name" datatype="char" value="2mass:J">
+					<VODML>
+						<ROLE>photdm-alt:PhotometryFilter.bandName</ROLE>
+					</VODML>
+				</PARAM>
+				<PARAM name="name" datatype="float" value="1235" unit="nm">
+					<VODML>
+						<ROLE>photdm-alt:PhotometryFilter.spectralLocation</ROLE>
+					</VODML>
+				</PARAM>
+			</GROUP>
+
+			<!-- spectralLocation serialized as GROUP -->
+			<GROUP ID="_2massH">
+				<VODML>
+					<ROLE>photdm-alt:PhotometryicSystem.photometryFilter</ROLE>
+					<TYPE>photdm-alt:PhotometryFilter</TYPE>
+				</VODML>
+				<PARAM name="name" datatype="char" value="H">
+					<VODML>
+						<ROLE>photdm-alt:PhotometryFilter.name</ROLE>
+					</VODML>
+				</PARAM>
+				<PARAM name="name" datatype="char" value="2mass:H">
+					<VODML>
+						<ROLE>photdm-alt:PhotometryFilter.bandName</ROLE>
+					</VODML>
+				</PARAM>
+				<GROUP>
+					<VODML>
+						<ROLE>photdm-alt:PhotometryFilter.spectralLocation</ROLE>
+						<TYPE>ivoa:quantity.RealQuantity</TYPE>
+					</VODML>
+					<PARAM name="unit" datatype="char" arraysize="*" value="nm">
+						<VODML>
+							<ROLE>ivoa:quantity.Quantity.unit</ROLE>
+							<TYPE>ivoa:quantity.Unit</TYPE>
+						</VODML>
+					</PARAM>
+					<PARAM name="value" datatype="float" value="1662">
+						<VODML>
+							<ROLE>ivoa:quantity.RealQuantity.value</ROLE>
+							<TYPE>ivoa:real</TYPE>
+						</VODML>
+					</PARAM>
+				</GROUP>
+			</GROUP>
+		</GROUP>
+		
+		
+	</RESOURCE>
+</VOTABLE>
