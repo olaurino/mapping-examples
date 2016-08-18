@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  
-Standalore instances from Photdm-alt data model.
+Standalore instances from sample/Filter data model.
 Secial features:
 - standalone instances of objecttype
 - ivoa:quantity.RealQuantity serializing to PARAM (implicit use of PARAM@unit) and explicitly to GROUP
@@ -41,20 +41,20 @@ See $7.1.
 	</GROUP>
 	
 	
-<!-- Import photdm-alt model -->
+<!-- Import filter model -->
 	<GROUP>
 		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml">
 			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
 		<PARAM name="identifier" datatype="char" arraysize="*"
-			value="ivo://ivoa.org/dm/PhotDM-alt/1.9">
+			value="ivo://ivoa.org/dm/sample/Filter/1.9">
 			<VODML><ROLE>vodml-map:Model.identifier</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
-		<PARAM name="name" datatype="char" arraysize="*" value="photdm-alt">
+		<PARAM name="name" datatype="char" arraysize="*" value="filter">
 			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
 		</PARAM>
 	</GROUP>
@@ -64,29 +64,29 @@ See $7.1.
     
     <!-- spectralLocation serialized as PARAM -->
     <GROUP  ID="_2massJ">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="name" datatype="char" value="J">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
       <PARAM name="name" datatype="char" value="2mass:J">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.bandName</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.bandName</ROLE></VODML>
       </PARAM>
       <PARAM name="name" datatype="float" value="1235" unit="nm">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.spectralLocation</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.spectralLocation</ROLE></VODML>
       </PARAM>
     </GROUP>
     
     <!-- spectralLocation serialized as GROUP -->
     <GROUP ID="_2massH">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="name" datatype="char" value="H">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
       <PARAM name="name" datatype="char" value="2mass:H">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.bandName</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.bandName</ROLE></VODML>
       </PARAM>
       <GROUP>
-        <VODML><ROLE>photdm-alt:PhotometryFilter.spectralLocation</ROLE><TYPE>ivoa:quantity.RealQuantity</TYPE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.spectralLocation</ROLE><TYPE>ivoa:quantity.RealQuantity</TYPE></VODML>
         <PARAM name="unit" datatype="char" arraysize="*" value="nm">
           <VODML><ROLE>ivoa:quantity.Quantity.unit</ROLE><TYPE>ivoa:quantity.Unit</TYPE></VODML>
         </PARAM>

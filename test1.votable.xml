@@ -35,16 +35,16 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml">
 			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
 		<PARAM name="identifier" datatype="char" arraysize="*"
-			value="ivo://ivoa.org/dm/PhotDM-alt/1.9">
+			value="ivo://ivoa.org/dm/sample/Filter.dm">
 			<VODML><ROLE>vodml-map:Model.identifier</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
-		<PARAM name="name" datatype="char" arraysize="*" value="photdm-alt">
+		<PARAM name="name" datatype="char" arraysize="*" value="filter">
 			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
 		</PARAM>
 	</GROUP>

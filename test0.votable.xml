@@ -38,16 +38,16 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml">
 			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
 		<PARAM name="identifier" datatype="char" arraysize="*"
-			value="ivo://ivoa.org/dm/PhotDM-alt/1.9">
+			value="ivo://ivoa.org/dm/sample/Filter/1.9">
 			<VODML><ROLE>vodml-map:Model.identifier</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
-		<PARAM name="name" datatype="char" arraysize="*" value="photdm-alt">
+		<PARAM name="name" datatype="char" arraysize="*" value="filter">
 			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
 		</PARAM>
 	</GROUP>
@@ -143,12 +143,12 @@ See $7.1.
     See $7.5.4
     -->
     <GROUP  ID="_2massJ">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="name" datatype="char" value="2mass:J">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
       <!--  WRONG ! 
-      photdm-alt:PhotometryFilter does not have the Role src:source.SkyCoordinateFrame.name 
+      filter:PhotometryFilter does not have the Role src:source.SkyCoordinateFrame.name 
       -->
       <PARAM name="name" datatype="char" value="FOO">
         <VODML><ROLE>src:source.SkyCoordinateFrame.name</ROLE></VODML>
@@ -157,33 +157,33 @@ See $7.1.
     
     
     <GROUP ID="_2massH">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="name" datatype="char" value="2mass:H">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
     </GROUP>
     <GROUP ID="_2massK">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="name" datatype="char" value="2mass:K">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
     </GROUP>
     <GROUP ID="_sdssg">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="id" datatype="char" value="sdss:g">
         <VODML><ROLE>vodml-map:ObjectTypeInstance.ID</ROLE></VODML>
       </PARAM>
       <PARAM name="name" datatype="char" value="sdss:g" >
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
     </GROUP>
     <GROUP ID="_sdssr">
-      <VODML><TYPE>photdm-alt:PhotometryFilter</TYPE></VODML>
+      <VODML><TYPE>filter:PhotometryFilter</TYPE></VODML>
       <PARAM name="id" datatype="char" value="sdss:r">
         <VODML><ROLE>vodml-map:ObjectTypeInstance.ID</ROLE></VODML>
       </PARAM>
       <PARAM name="name" datatype="char" value="sdss:r">
-        <VODML><ROLE>photdm-alt:PhotometryFilter.name</ROLE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.name</ROLE></VODML>
       </PARAM>
     </GROUP>
     
