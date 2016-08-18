@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+Test for vodml-map:Model.
+Version of test1 with errors:
+a parameter is introduced that does not exist (description)
+ -->
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3_vodml">
+<!-- 
+Declaration of VO-DML modes that are used in this annotated VOTable.
+See $7.1.
+-->
+	<GROUP>
+		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
+		<PARAM name="url" datatype="char" arraysize="*"
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml">
+			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
+		</PARAM>
+		<PARAM name="name" datatype="char" arraysize="*" value="vodml-map">
+			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
+		</PARAM>
+		<!-- the following annotation is an error as the vodmlref does not refer to an existing vo-dml element -->
+		<PARAM name="descr" datatype="char" arraysize="*" value="vodml-map is the model defining annotations for special annotations">
+			<VODML><ROLE>vodml-map:Model.description</ROLE><TYPE>ivoa:string</TYPE></VODML>
+		</PARAM>
+	</GROUP>
+	
+	<GROUP>
+		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
+		
+		<PARAM name="name" datatype="char" arraysize="*" value="ivoa">
+			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
+		</PARAM>
+		
+		<PARAM name="url" datatype="char" arraysize="*"
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml">
+			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
+		</PARAM>
+		<!-- Here an existing vo-dmlid is used in the wrong location. This vodmlref identifies a type, not  role-->
+		<PARAM name="typo" datatype="char" arraysize="*" value="model">
+			<VODML><ROLE>vodml-map:Model</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
+		</PARAM>
+
+	</GROUP>
+	
+	<GROUP>
+		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
+		<PARAM name="url" datatype="char" arraysize="*"
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml">
+			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
+		</PARAM>
+		
+		<PARAM name="identifier" datatype="char" arraysize="*"
+			value="ivo://ivoa.org/dm/PhotDM-alt/1.9">
+			<VODML><ROLE>vodml-map:Model.identifier</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
+		</PARAM>
+		
+		<PARAM name="name" datatype="char" arraysize="*" value="photdm-alt">
+			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
+		</PARAM>
+		<!-- Here an existing vodml-id identifying  Role is used in the wrong location. -->
+		<PARAM name="typo" datatype="char" arraysize="*" value="model">
+			<VODML><ROLE>vodml-map:Collection.item</ROLE><TYPE>vodml-map:Reference</TYPE></VODML>
+		</PARAM>
+
+		
+	</GROUP>
+	
+	<RESOURCE/>
+	
+	
+</VOTABLE>

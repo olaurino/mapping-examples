@@ -86,7 +86,9 @@
 			<VODML>
 				<TYPE>photdm-alt:PhotometricSystem</TYPE>
 			</VODML>
-			<PARAM name="description" datatype="char" arraysize="*" value="The 2MASS phtometric system, consisting of 3 bands"></PARAM>
+			<PARAM name="description" datatype="char" arraysize="*" value="The 2MASS phtometric system, consisting of 3 bands">
+			<VODML><ROLE>photdm-alt:PhotometricSystem.description</ROLE><TYPE>ivoa:string</TYPE></VODML>
+			</PARAM>
 			<GROUP ID="_2massJ">
 				<VODML>
 					<ROLE>photdm-alt:PhotometricSystem.photometryFilter</ROLE>

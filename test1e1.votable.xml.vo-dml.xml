@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vodmli:instance xmlns:vodmli="http://volute.googlecode.com/dm/vo-dml-instance/v0.x">
+<model><vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml</vodmlURL><utypePrefix>ivoa</utypePrefix></model>
+<model><vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml</vodmlURL><utypePrefix>vodml-map</utypePrefix></model>
+<model><vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/photdm-alt/PhotDM-alt.vo-dml.xml</vodmlURL><utypePrefix>photdm-alt</utypePrefix></model>
+</vodmli:instance>
