@@ -55,10 +55,10 @@ See $7.1.
 	<GROUP>
 		<VODML><TYPE>vodml-map:Model</TYPE></VODML>
 		<PARAM name="url" datatype="char" arraysize="*"
-			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/source/SourceDM.vo-dml.xml">
+			value="http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/sample/Sample.vo-dml.xml">
 			<VODML><ROLE>vodml-map:Model.url</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
-		<PARAM name="name" datatype="char" arraysize="*" value="src">
+		<PARAM name="name" datatype="char" arraysize="*" value="sample">
 			<VODML><ROLE>vodml-map:Model.name</ROLE><TYPE>ivoa:string</TYPE></VODML>
 		</PARAM>
 	</GROUP>
