@@ -121,7 +121,7 @@ See $7.1.
     Note that not all FIELDs are represented in the annotation, as there is no model covering all elements such as.
      -->
       <GROUP ID="_source">
-        <VODML><TYPE>sample:catalog.AbstractSource</TYPE></VODML>
+        <VODML><TYPE>sample:catalog.Source</TYPE></VODML>
         <FIELDref ref="_designation">
           <VODML><ROLE>vodml-map:ObjectTypeInstance.ID</ROLE></VODML>
         </FIELDref>
