@@ -122,9 +122,30 @@ The parser was run on some of the volute test files with output stored in subdir
 <h3>Output Directories</h3>
 <a href="outJson" target="_blank">outJson</a><br>
 <br>
-<a href="outJsonlite" target="_blank">outJsonlite</a><br>
+<a href="outJsonLite" target="_blank">outJsonLite</a><br>
 <br>
 <a href="outVotableAlt" target="_blank">outVotableAlt</a> - These files are in the alternate VODML syntax, and can also be parsed by this same parser.<br>
+<br>
+<h2>Output Formats</h2>
+The output formats are based on the likely oversimplified notion that
+the VODML entities represented in the VOTABLE fall into 3 categories:<br>
+<ul>
+  <li>Models</li>
+  <li>Global instances</li>
+  <li>Template instances which are defined within a TABLE, and imply one concrete instance per table row.</li>
+</ul>
+In the JSON formats, the Global instances are stored in 2 structures:<br>
+<ul>
+  <li><span style="font-weight: bold;">globalsById</span> - Instances with id's can be looked up in this dictionary where the keys are the id's.</li>
+  <li><span style="font-weight: bold;">nonIdGlobals</span> - An array of all the global instances that did not have id's.</li>
+</ul>
+In the JSON formats, the templates are instantiated one per table
+row.&nbsp; In the alternative mapping VOTABLEs, the templates remain
+templates, with the table data staying in normal VOTABLE format.<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
