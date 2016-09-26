@@ -139,9 +139,10 @@ In the JSON formats, the Global instances are stored in 2 structures:<br>
   <li><span style="font-weight: bold;">globalsById</span> - Instances with id's can be looked up in this dictionary where the keys are the id's.</li>
   <li><span style="font-weight: bold;">nonIdGlobals</span> - An array of all the global instances that did not have id's.</li>
 </ul>
-In the JSON formats, the templates are instantiated one per table
-row.&nbsp; In the alternative mapping VOTABLEs, the templates remain
-templates, with the table data staying in normal VOTABLE format.<br>
+In the JSON formats, there is an array of tables.&nbsp; Each of those
+has an array of rows, which in turn contain an array of instances.<br>
+<br>
+In the alternative mapping VOTABLEs, the templates remain templates, with the table data staying in normal VOTABLE format.<br>
 <br>
 <br>
 <br>
