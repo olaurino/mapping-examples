@@ -1,0 +1,43 @@
+{
+	"modelsByName": 
+		{
+			"ivoa": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml"
+				},
+			"vodml-map": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml"
+				},
+			"Composition": 
+				{
+					"url": "http://saada.unistra.fr/voexamples/dali/vodml/Composition/query",
+					"identifier": "ivo://ivoa.org/dm/sample/Composition/1.0"
+				}
+		},
+	"globalsById": 
+		{},
+	"nonIdGlobals": 
+		[],
+	"tables": 
+		[
+			[
+				[
+					{
+						"__type__": "Composition:base.Airplane",
+						"vodml-map:ObjectTypeInstance.ID": "#123454_AP",
+						"Composition:base.Airplane.SerialNumber": "#123454_AP",
+						"Composition:base.Airplane.Wings": 
+							{
+								"__type__": "Composition:base.Wing",
+								"Composition:base.Wing.SerialNumber": 
+									[
+										"#67867868_RW",
+										"#89546_LW"
+									]
+							}
+					}
+				]
+			]
+		]
+}

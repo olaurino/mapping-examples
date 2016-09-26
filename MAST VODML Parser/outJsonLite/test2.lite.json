@@ -1,0 +1,44 @@
+{
+	"modelsByName": 
+		{
+			"vodml-map": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml"
+				},
+			"ivoa": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml"
+				},
+			"filter": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml",
+					"identifier": "ivo://ivoa.org/dm/sample/Filter/1.9"
+				}
+		},
+	"globalsById": 
+		{
+			"_2massJ": 
+				{
+					"__type__": "filter:PhotometryFilter",
+					"filter:PhotometryFilter.name": "J",
+					"filter:PhotometryFilter.bandName": "2mass:J",
+					"filter:PhotometryFilter.spectralLocation": 1235
+				},
+			"_2massH": 
+				{
+					"__type__": "filter:PhotometryFilter",
+					"filter:PhotometryFilter.name": "H",
+					"filter:PhotometryFilter.bandName": "2mass:H",
+					"filter:PhotometryFilter.spectralLocation": 
+						{
+							"__type__": "ivoa:quantity.RealQuantity",
+							"ivoa:quantity.Quantity.unit": "nm",
+							"ivoa:quantity.RealQuantity.value": 1662
+						}
+				}
+		},
+	"nonIdGlobals": 
+		[],
+	"tables": 
+		[]
+}

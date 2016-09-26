@@ -1,0 +1,24 @@
+{
+	"modelsByName": 
+		{
+			"vodml-map": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml"
+				},
+			"ivoa": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml"
+				},
+			"filter": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml",
+					"identifier": "ivo://ivoa.org/dm/sample/Filter.dm"
+				}
+		},
+	"globalsById": 
+		{},
+	"nonIdGlobals": 
+		[],
+	"tables": 
+		[]
+}

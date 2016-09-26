@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>VODML Parser</title>
+
+  
+</head><body>
+<h1>VODML Parser Service<br>
+</h1>
+
+<h2>Summary</h2>
+
+This web service transforms a VOTABLE into a variety of formats.&nbsp;
+The input table can contain the proposed VODML mapping syntax or the
+alternate mapping syntax (see votableAlt option format option below),
+but not both.&nbsp; <br>
+
+<h2>Arguments</h2>
+
+<ul>
+
+  <li><span style="font-weight: bold;">format</span> - The desired
+output format.&nbsp; Available choices (not case sensitive) are
+below.&nbsp; The first 3 are the ones that may be useful for VODML
+discussions:</li>
+  <br>
+  <ul>
+    <li><span style="font-weight: bold;">json</span> - A JSON
+serialization of all the VODML instances from the input VOTABLE.&nbsp;
+All non-VODML content of the VOTABLE is discarded.<br>
+    </li>
+    <li><span style="font-weight: bold;">jsonlite</span> - A slightly
+shorter serialization of all the VODML instances.&nbsp; The only real
+difference is in the leaf nodes for primitive data values.</li>
+    <li><span style="font-weight: bold;">votableAlt</span> - A VOTABLE
+equivalent to the input VOTABLE but with the VODML instances serialized
+using an alternative mapping.</li>
+    <li><span style="font-weight: bold;">extjs</span> - A complex JSON
+serialization intended for use by the MAST Discivery Portal.&nbsp; This
+format contains all the data from the original table along with some
+client-specific information such as histograms of the data
+columns.&nbsp; It also contains the same object returned by the json
+format above.</li>
+    <li><span style="font-weight: bold;">csv</span> - A csv containing
+the TABLEDATA from the first table in the input VOTABLE.&nbsp; Most
+metadata is discarded.<br>
+    </li>
+  </ul>
+</ul>
+
+<ul>
+
+  <li><span style="font-weight: bold;">votable</span> - The input
+votable.&nbsp; Value can be specified as:<br>
+  </li>
+  <ul>
+    <li>URL (must be accessible to the masttest.stsci.edu server)<br>
+    </li>
+    <li>Local file (only available when using the parseVodmlForm
+version of the web service)<br>
+    </li>
+  </ul>
+</ul>
+
+<h2>Service Entry Points</h2>
+
+The service has two different versions, both of which have the base URL
+<span style="font-style: italic;">https://masttest.stsci.edu/vodml/Mashup/Mashup.asmx/</span><br>
+
+<ul>
+
+  <li><span style="font-weight: bold;">parseVodml</span> - Takes the
+arguments as url parameters.</li>
+  <ul>
+    <li>votable value must be URL accessible to the masttest server.</li>
+  </ul>
+  <ul>
+    <li>This example URL, which can be used with <span style="font-style: italic;">curl</span> or in a browser, parses
+test4.votable.xml from volute, and outputs the resulting VODML
+instances in <span style="font-weight: bold;">json</span> format:</li>
+  </ul>
+</ul>
+
+<a href="https://masttest.stsci.edu/vodml/Mashup/Mashup.asmx/parseVodml?format=json&amp;votable=https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test4.votable.xml" target="_blank">https://masttest.stsci.edu/vodml/Mashup/Mashup.asmx/parseVodml?format=json&amp;votable=https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test4.votable.xml</a><br>
+
+<ul>
+
+  <li><span style="font-weight: bold;">parseVodmlForm</span> - Takes
+the arguments as form data.</li>
+  <ul>
+    <li>votable value can be URL or can specify a file from your local
+disk.</li>
+    <li>The first example does the same thing as the URL above, but
+with the arguments as form data:</li>
+  </ul>
+</ul>
+
+<pre>curl \<br>&nbsp; -F "format=json" \<br>&nbsp; -F "votable=https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test4.votable.xml" \<br>&nbsp; https://masttest.stsci.edu/vodml/Mashup/Mashup.asmx/parseVodmlForm<br><br></pre>
+
+<ul>
+
+  <ul>
+    <li>The second example does the same thing, but loads the votable
+from the local disk:</li>
+  </ul>
+</ul>
+
+<pre>curl \<br>&nbsp; -F "format=json" \<br>&nbsp; -F "votable=@/Users/tom/myfiles/test4.votable.xml" \<br>&nbsp;https://masttest.stsci.edu/vodml/Mashup/Mashup.asmx/parseVodmlForm<br></pre>
+<h2><br>
+</h2>
+<h2>Sample Output</h2>
+The parser was run on some of the volute test files with output stored in subdirectories by format.<br>
+<h3>Input Files</h3>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test1.votable.xml" target="_blank">test1.votable.xml</a><br>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test2.votable.xml" target="_blank">test2.votable.xml</a><br>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test3.votable.xml" target="_blank">test3.votable.xml</a><br>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/test4.votable.xml" target="_blank">test4.votable.xml</a><br>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/Association/Association.votable.xml" target="_blank">Association.votable.xml</a><br>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/Composition/Composition.votable.xml" target="_blank">Composition.votable.xml</a><br>
+<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/EnumLiteral/EnumLiteral.votable.xml" target="_blank">EnumLiteral.votable.xml</a><br>
+<h3>Output Directories</h3>
+<a href="outJson" target="_blank">outJson</a><br>
+<br>
+<a href="outJsonlite" target="_blank">outJsonlite</a><br>
+<br>
+<a href="outVotableAlt" target="_blank">outVotableAlt</a> - These files are in the alternate VODML syntax, and can also be parsed by this same parser.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body></html>

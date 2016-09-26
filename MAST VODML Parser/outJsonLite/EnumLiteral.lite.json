@@ -1,0 +1,50 @@
+{
+	"modelsByName": 
+		{
+			"ivoa": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml"
+				},
+			"vodml-map": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml"
+				},
+			"EnumLiteral": 
+				{
+					"url": "http://saada.unistra.fr/voexamples/dali/vodml/EnumLiteral/query",
+					"identifier": "ivo://ivoa.org/dm/sample/EnumLiteral/1.0"
+				}
+		},
+	"globalsById": 
+		{},
+	"nonIdGlobals": 
+		[],
+	"tables": 
+		[
+			[
+				[
+					{
+						"__type__": "EnumLiteral:base.imageComposite",
+						"EnumLiteral:base.imageComposite.redComponent": 
+							{
+								"__type__": "EnumLiteral:base.imageComponent",
+								"EnumLiteral:base.imageComponent.URL": "http://infrared.image.com",
+								"EnumLiteral:base.imageComponent.band": "IR"
+							},
+						"EnumLiteral:base.imageComposite.greenComponent": 
+							{
+								"__type__": "EnumLiteral:base.imageComponent",
+								"EnumLiteral:base.imageComponent.URL": "http://visible.image.com",
+								"EnumLiteral:base.imageComponent.band": "Visible"
+							},
+						"EnumLiteral:base.imageComposite.blueComponent": 
+							{
+								"__type__": "EnumLiteral:base.imageComponent",
+								"EnumLiteral:base.imageComponent.URL": "http://he.image.com",
+								"EnumLiteral:base.imageComponent.band": "Xray"
+							}
+					}
+				]
+			]
+		]
+}

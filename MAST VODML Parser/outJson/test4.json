@@ -1,0 +1,598 @@
+{
+	"modelsByName": 
+		{
+			"ivoa": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml"
+				},
+			"vodml-map": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml"
+				},
+			"filter": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml",
+					"identifier": "ivo://ivoa.org/dm/sample/Filter/1.9"
+				},
+			"sample": 
+				{
+					"url": "http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/sample/Sample.vo-dml.xml"
+				}
+		},
+	"globalsById": 
+		{
+			"_icrs": 
+				{
+					"__type__": "sample:catalog.SkyCoordinateFrame",
+					"sample:catalog.SkyCoordinateFrame.name": 
+						{
+							"__type__": "char",
+							"__value__": "ICRS"
+						}
+				},
+			"_2massJ": 
+				{
+					"__type__": "filter:PhotometryFilter",
+					"filter:PhotometryFilter.name": 
+						{
+							"__type__": "char",
+							"__value__": "2mass:J"
+						}
+				},
+			"_2massH": 
+				{
+					"__type__": "filter:PhotometryFilter",
+					"filter:PhotometryFilter.name": 
+						{
+							"__type__": "char",
+							"__value__": "2mass:H"
+						}
+				},
+			"_2massK": 
+				{
+					"__type__": "filter:PhotometryFilter",
+					"filter:PhotometryFilter.name": 
+						{
+							"__type__": "char",
+							"__value__": "2mass:K"
+						}
+				}
+		},
+	"nonIdGlobals": 
+		[],
+	"tables": 
+		[
+			[
+				[
+					{
+						"__type__": "sample:catalog.Source",
+						"vodml-map:ObjectTypeInstance.ID": 
+							{
+								"__type__": "char",
+								"__value__": "08120809-0206132"
+							},
+						"sample:catalog.AbstractSource.name": 
+							{
+								"__type__": "char",
+								"__value__": "08120809-0206132"
+							},
+						"sample:catalog.AbstractSource.position": 
+							{
+								"__type__": "sample:catalog.SkyCoordinate",
+								"sample:catalog.SkyCoordinate.longitude": 
+									{
+										"__type__": "float",
+										"__value__": 123.0337
+									},
+								"sample:catalog.SkyCoordinate.latitude": 
+									{
+										"__type__": "float",
+										"__value__": -2.103671
+									},
+								"sample:catalog.SkyCoordinate.frame": 
+									{
+										"__type__": "objectRef",
+										"__value__": "_icrs"
+									}
+							},
+						"sample:catalog.AbstractSource.luminosity": 
+							[
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 14.161
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.025
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massJ"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.675
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.048
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massK"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.681
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.027
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massH"
+										}
+								}
+							]
+					}
+				],
+				[
+					{
+						"__type__": "sample:catalog.Source",
+						"vodml-map:ObjectTypeInstance.ID": 
+							{
+								"__type__": "char",
+								"__value__": "08115683-0205428"
+							},
+						"sample:catalog.AbstractSource.name": 
+							{
+								"__type__": "char",
+								"__value__": "08115683-0205428"
+							},
+						"sample:catalog.AbstractSource.position": 
+							{
+								"__type__": "sample:catalog.SkyCoordinate",
+								"sample:catalog.SkyCoordinate.longitude": 
+									{
+										"__type__": "float",
+										"__value__": 122.9868
+									},
+								"sample:catalog.SkyCoordinate.latitude": 
+									{
+										"__type__": "float",
+										"__value__": -2.095231
+									},
+								"sample:catalog.SkyCoordinate.frame": 
+									{
+										"__type__": "objectRef",
+										"__value__": "_icrs"
+									}
+							},
+						"sample:catalog.AbstractSource.luminosity": 
+							[
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 15.86
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.06
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massJ"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 14.847
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.127
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massK"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 15.103
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.077
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massH"
+										}
+								}
+							]
+					}
+				],
+				[
+					{
+						"__type__": "sample:catalog.Source",
+						"vodml-map:ObjectTypeInstance.ID": 
+							{
+								"__type__": "char",
+								"__value__": "08115826-0205336"
+							},
+						"sample:catalog.AbstractSource.name": 
+							{
+								"__type__": "char",
+								"__value__": "08115826-0205336"
+							},
+						"sample:catalog.AbstractSource.position": 
+							{
+								"__type__": "sample:catalog.SkyCoordinate",
+								"sample:catalog.SkyCoordinate.longitude": 
+									{
+										"__type__": "float",
+										"__value__": 122.9928
+									},
+								"sample:catalog.SkyCoordinate.latitude": 
+									{
+										"__type__": "float",
+										"__value__": -2.092676
+									},
+								"sample:catalog.SkyCoordinate.frame": 
+									{
+										"__type__": "objectRef",
+										"__value__": "_icrs"
+									}
+							},
+						"sample:catalog.AbstractSource.luminosity": 
+							[
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 16.273
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.096
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massJ"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 15.46
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.212
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massK"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 15.718
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.112
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massH"
+										}
+								}
+							]
+					}
+				],
+				[
+					{
+						"__type__": "sample:catalog.Source",
+						"vodml-map:ObjectTypeInstance.ID": 
+							{
+								"__type__": "char",
+								"__value__": "08121086-0207102"
+							},
+						"sample:catalog.AbstractSource.name": 
+							{
+								"__type__": "char",
+								"__value__": "08121086-0207102"
+							},
+						"sample:catalog.AbstractSource.position": 
+							{
+								"__type__": "sample:catalog.SkyCoordinate",
+								"sample:catalog.SkyCoordinate.longitude": 
+									{
+										"__type__": "float",
+										"__value__": 123.0452
+									},
+								"sample:catalog.SkyCoordinate.latitude": 
+									{
+										"__type__": "float",
+										"__value__": -2.119513
+									},
+								"sample:catalog.SkyCoordinate.frame": 
+									{
+										"__type__": "objectRef",
+										"__value__": "_icrs"
+									}
+							},
+						"sample:catalog.AbstractSource.luminosity": 
+							[
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.512
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.021
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massJ"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 12.956
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.029
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massK"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.058
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.024
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massH"
+										}
+								}
+							]
+					}
+				],
+				[
+					{
+						"__type__": "sample:catalog.Source",
+						"vodml-map:ObjectTypeInstance.ID": 
+							{
+								"__type__": "char",
+								"__value__": "08120662-0205179"
+							},
+						"sample:catalog.AbstractSource.name": 
+							{
+								"__type__": "char",
+								"__value__": "08120662-0205179"
+							},
+						"sample:catalog.AbstractSource.position": 
+							{
+								"__type__": "sample:catalog.SkyCoordinate",
+								"sample:catalog.SkyCoordinate.longitude": 
+									{
+										"__type__": "float",
+										"__value__": 123.0276
+									},
+								"sample:catalog.SkyCoordinate.latitude": 
+									{
+										"__type__": "float",
+										"__value__": -2.088332
+									},
+								"sample:catalog.SkyCoordinate.frame": 
+									{
+										"__type__": "objectRef",
+										"__value__": "_icrs"
+									}
+							},
+						"sample:catalog.AbstractSource.luminosity": 
+							[
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.478
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.026
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massJ"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.142
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.03
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massK"
+										}
+								},
+								{
+									"__type__": "sample:catalog.LuminosityMeasurement",
+									"sample:catalog.LuminosityMeasurement.value": 
+										{
+											"__type__": "float",
+											"__value__": 13.188
+										},
+									"sample:catalog.LuminosityMeasurement.error": 
+										{
+											"__type__": "float",
+											"__value__": 0.027
+										},
+									"sample:catalog.LuminosityMeasurement.type": 
+										{
+											"__type__": "char",
+											"__value__": "magnitude"
+										},
+									"sample:catalog.LuminosityMeasurement.filter": 
+										{
+											"__type__": "objectRef",
+											"__value__": "_2massH"
+										}
+								}
+							]
+					}
+				]
+			]
+		]
+}
