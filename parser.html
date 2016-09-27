@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VO-DML Mapping Parser</title>
+
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+	<H1>VO-DML Mapping Parser (<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/mapping/MAST%20VODML%20Parser/VODML%20Parser.html" target=blank>more...</a>)</h1>
+	<div>
+
+		<ul>
+			<li><a href='#' id="li">mapping/test1.votable.xml</a></li>
+			<li><a href='#' id="li">mapping/test2.votable.xml</a></li>
+			<li><a href='#' id="li">mapping/test3.votable.xml</a></li>
+			<li><a href='#' id="li">mapping/test4.votable.xml</a></li>
+			<li><a href='#' id="li">mapping/test4.votable.xml</a></li>
+			<li><a href='#' id="li">models/sample/Association/Association.votable.xml</a></li>
+			<li><a href='#' id="li">models/sample/Composition/Composition.votable.xml</a></li>
+			<li><a href='#' id="li">models/sample/EnumLiteral/EnumLiteral.votable.xml</a></li>
+		</ul>
+		Output Format <select id=format>
+			<option>json</option>
+			<option>jsonlite</option>
+			<option>extjs</option>
+			<option>csv</option>
+
+		</select> url: <span id="url"></span> <br>
+		<br>
+		<iframe id=retour
+			style="width: 100%; height: 400px; overflow: auto; background-color: #DDD;"></iframe>
+		<br> <span>Page dedicated to the VO-DML focus group (Laurent MICHEL 09/2016)</span>
+	</div>
+</body>
+<script type="text/javascript">
+var baseUrl = "https://masttest.stsci.edu/vodml/Mashup/Mashup.asmx/parseVodml?";
+$().ready(function() {
+    $( "a" ).click(function(){
+    	var url = baseUrl + "format=" + $('#format').val() + "&votable=https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/" + $(this).html();
+        $("#url").html(url);
+        $("#retour").attr("src", url );
+    });
+});
+</script>
+</html>
+
