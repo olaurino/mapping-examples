@@ -13,8 +13,8 @@
         <vodmlrefPrefix>filter</vodmlrefPrefix>
         <identifier>ivo://ivoa.org/dm/sample/Filter/1.9</identifier>
     </model>
-    <!-- +++++++++ START GROUP[rank=13|vodmlref=(role=|type=photdm-alt:PhotometryFilter):id=_2massJ]: -->
-    <object vodmlRef="photdm-alt:PhotometryFilter">
+    <!-- +++++++++ START GROUP[rank=13|vodmlref=(role=|type=filter:PhotometryFilter):id=_2massJ]: -->
+    <object vodmlRef="filter:PhotometryFilter">
         <identifier>
             <transientID>-1</transientID>
             <altID>
@@ -22,13 +22,13 @@
                 <source>GROUP/@ID</source>
             </altID>
         </identifier>
-        <attribute vodmlRef="photdm-alt:PhotometryFilter.name" name="name">
+        <attribute vodmlRef="filter:PhotometryFilter.name" name="name">
             <primitiveValue vodmlRef="ivoa:string">J</primitiveValue>
         </attribute>
-        <attribute vodmlRef="photdm-alt:PhotometryFilter.bandName" name="bandName">
+        <attribute vodmlRef="filter:PhotometryFilter.bandName" name="bandName">
             <primitiveValue vodmlRef="ivoa:string">2mass:J</primitiveValue>
         </attribute>
-        <attribute vodmlRef="photdm-alt:PhotometryFilter.spectralLocation" name="spectralLocation">
+        <attribute vodmlRef="filter:PhotometryFilter.spectralLocation" name="spectralLocation">
             <dataObject vodmlRef="ivoa:quantity.RealQuantity">
                 <attribute vodmlRef="ivoa:quantity.Quantity.unit" name="unit">
                     <primitiveValue vodmlRef="ivoa:quantity.Unit">nm</primitiveValue>
@@ -39,9 +39,9 @@
             </dataObject>
         </attribute>
     </object>
-    <!-- +++++++++   END GROUP[rank=13|vodmlref=(role=|type=photdm-alt:PhotometryFilter):id=_2massJ] -->
-    <!-- +++++++++ START GROUP[rank=17|vodmlref=(role=|type=photdm-alt:PhotometryFilter):id=_2massH]: -->
-    <object vodmlRef="photdm-alt:PhotometryFilter">
+    <!-- +++++++++   END GROUP[rank=13|vodmlref=(role=|type=filter:PhotometryFilter):id=_2massJ] -->
+    <!-- +++++++++ START GROUP[rank=17|vodmlref=(role=|type=filter:PhotometryFilter):id=_2massH]: -->
+    <object vodmlRef="filter:PhotometryFilter">
         <identifier>
             <transientID>-2</transientID>
             <altID>
@@ -49,13 +49,13 @@
                 <source>GROUP/@ID</source>
             </altID>
         </identifier>
-        <attribute vodmlRef="photdm-alt:PhotometryFilter.name" name="name">
+        <attribute vodmlRef="filter:PhotometryFilter.name" name="name">
             <primitiveValue vodmlRef="ivoa:string">H</primitiveValue>
         </attribute>
-        <attribute vodmlRef="photdm-alt:PhotometryFilter.bandName" name="bandName">
+        <attribute vodmlRef="filter:PhotometryFilter.bandName" name="bandName">
             <primitiveValue vodmlRef="ivoa:string">2mass:H</primitiveValue>
         </attribute>
-        <attribute vodmlRef="photdm-alt:PhotometryFilter.spectralLocation" name="spectralLocation">
+        <attribute vodmlRef="filter:PhotometryFilter.spectralLocation" name="spectralLocation">
             <dataObject vodmlRef="ivoa:quantity.RealQuantity">
                 <attribute vodmlRef="ivoa:quantity.Quantity.unit" name="unit">
                     <primitiveValue vodmlRef="ivoa:quantity.Unit">nm</primitiveValue>
@@ -66,5 +66,5 @@
             </dataObject>
         </attribute>
     </object>
-    <!-- +++++++++   END GROUP[rank=17|vodmlref=(role=|type=photdm-alt:PhotometryFilter):id=_2massH] -->
+    <!-- +++++++++   END GROUP[rank=17|vodmlref=(role=|type=filter:PhotometryFilter):id=_2massH] -->
 </vodmli:instance>
