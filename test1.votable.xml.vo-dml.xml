@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vodmli:instance xmlns:vodmli="http://volute.g-vo.org/dm/vo-dml-instance/v0.x">
+    <model>
+        <vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml</vodmlURL>
+        <vodmlrefPrefix>ivoa</vodmlrefPrefix>
+    </model>
+    <model>
+        <vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml</vodmlURL>
+        <vodmlrefPrefix>vodml-map</vodmlrefPrefix>
+    </model>
+    <model>
+        <vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml</vodmlURL>
+        <vodmlrefPrefix>filter</vodmlrefPrefix>
+        <identifier>ivo://ivoa.org/dm/sample/Filter/1.9</identifier>
+    </model>
+</vodmli:instance>

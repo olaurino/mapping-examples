@@ -40,7 +40,7 @@ See $7.1.
 		</PARAM>
 		
 		<PARAM name="identifier" datatype="char" arraysize="*"
-			value="ivo://ivoa.org/dm/sample/Filter.dm">
+			value="ivo://ivoa.org/dm/sample/Filter/1.9">
 			<VODML><ROLE>vodml-map:Model.identifier</ROLE><TYPE>ivoa:anyURI</TYPE></VODML>
 		</PARAM>
 		
