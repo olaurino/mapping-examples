@@ -29,11 +29,11 @@
             <primitiveValue vodmlRef="ivoa:string">2mass:J</primitiveValue>
         </attribute>
         <attribute vodmlRef="filter:PhotometryFilter.spectralLocation" name="spectralLocation">
-            <dataObject vodmlRef="ivoa:quantity.RealQuantity">
-                <attribute vodmlRef="ivoa:quantity.Quantity.unit" name="unit">
-                    <primitiveValue vodmlRef="ivoa:quantity.Unit">nm</primitiveValue>
+            <dataObject vodmlRef="ivoa:RealQuantity">
+                <attribute vodmlRef="ivoa:Quantity.unit" name="unit">
+                    <primitiveValue vodmlRef="ivoa:Unit">nm</primitiveValue>
                 </attribute>
-                <attribute vodmlRef="ivoa:quantity.RealQuantity.value" name="value">
+                <attribute vodmlRef="ivoa:RealQuantity.value" name="value">
                     <primitiveValue vodmlRef="ivoa:real">1235.0</primitiveValue>
                 </attribute>
             </dataObject>
@@ -56,11 +56,11 @@
             <primitiveValue vodmlRef="ivoa:string">2mass:H</primitiveValue>
         </attribute>
         <attribute vodmlRef="filter:PhotometryFilter.spectralLocation" name="spectralLocation">
-            <dataObject vodmlRef="ivoa:quantity.RealQuantity">
-                <attribute vodmlRef="ivoa:quantity.Quantity.unit" name="unit">
-                    <primitiveValue vodmlRef="ivoa:quantity.Unit">nm</primitiveValue>
+            <dataObject vodmlRef="ivoa:RealQuantity">
+                <attribute vodmlRef="ivoa:Quantity.unit" name="unit">
+                    <primitiveValue vodmlRef="ivoa:Unit">nm</primitiveValue>
                 </attribute>
-                <attribute vodmlRef="ivoa:quantity.RealQuantity.value" name="value">
+                <attribute vodmlRef="ivoa:RealQuantity.value" name="value">
                     <primitiveValue vodmlRef="ivoa:real">1662.0</primitiveValue>
                 </attribute>
             </dataObject>

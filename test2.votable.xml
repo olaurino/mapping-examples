@@ -86,12 +86,12 @@ See $7.1.
         <VODML><ROLE>filter:PhotometryFilter.bandName</ROLE></VODML>
       </PARAM>
       <GROUP>
-        <VODML><ROLE>filter:PhotometryFilter.spectralLocation</ROLE><TYPE>ivoa:quantity.RealQuantity</TYPE></VODML>
+        <VODML><ROLE>filter:PhotometryFilter.spectralLocation</ROLE><TYPE>ivoa:RealQuantity</TYPE></VODML>
         <PARAM name="unit" datatype="char" arraysize="*" value="nm">
-          <VODML><ROLE>ivoa:quantity.Quantity.unit</ROLE><TYPE>ivoa:quantity.Unit</TYPE></VODML>
+          <VODML><ROLE>ivoa:Quantity.unit</ROLE><TYPE>ivoa:Unit</TYPE></VODML>
         </PARAM>
         <PARAM name="value" datatype="float"  value="1662">
-          <VODML><ROLE>ivoa:quantity.RealQuantity.value</ROLE><TYPE>ivoa:real</TYPE></VODML>
+          <VODML><ROLE>ivoa:RealQuantity.value</ROLE><TYPE>ivoa:real</TYPE></VODML>
         </PARAM>
       </GROUP>
     </GROUP>
