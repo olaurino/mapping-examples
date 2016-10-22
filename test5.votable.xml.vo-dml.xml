@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vodmli:instance xmlns:vodmli="http://volute.g-vo.org/dm/vo-dml-instance/v0.x">
+	<model>
+		<vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/IVOA.vo-dml.xml</vodmlURL>
+		<vodmlrefPrefix>ivoa</vodmlrefPrefix>
+	</model>
+	<model>
+		<vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/vodml-map/vodml-map.vo-dml.xml</vodmlURL>
+		<vodmlrefPrefix>vodml-map</vodmlrefPrefix>
+	</model>
+	<model>
+		<vodmlURL>http://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/sample/filter/Filter.vo-dml.xml</vodmlURL>
+		<vodmlrefPrefix>filter</vodmlrefPrefix>
+	</model>
+	<!-- +++++++++ START GROUP[rank=13|vodmlRef=(role=|type=filter:PhotometricSystem):id=_2mass]: -->
+	<object vodmlRef="filter:PhotometricSystem">
+		<identifier>
+			<transientID>-1</transientID>
+			<altID>
+				<field>_2mass</field>
+				<source>GROUP/@ID</source>
+			</altID>
+		</identifier>
+		<attribute vodmlRef="filter:PhotometricSystem.description" name="description">
+			<primitiveValue vodmlRef="ivoa:string">The 2MASS phtometric system, consisting of 3 bands</primitiveValue>
+		</attribute>
+		<collection vodmlRef="filter:PhotometricSystem.photometryFilter" name="photometryFilter">
+			<object vodmlRef="filter:PhotometryFilter">
+				<identifier>
+					<transientID>-2</transientID>
+				</identifier>
+				<attribute vodmlRef="filter:PhotometryFilter.name" name="name">
+					<primitiveValue vodmlRef="ivoa:string">J</primitiveValue>
+				</attribute>
+				<attribute vodmlRef="filter:PhotometryFilter.bandName" name="bandName">
+					<primitiveValue vodmlRef="ivoa:string">2mass:J</primitiveValue>
+				</attribute>
+				<attribute vodmlRef="filter:PhotometryFilter.spectralLocation" name="spectralLocation">
+					<dataObject vodmlRef="ivoa:RealQuantity">
+						<attribute vodmlRef="ivoa:Quantity.unit" name="unit">
+							<primitiveValue vodmlRef="ivoa:Unit">nm</primitiveValue>
+						</attribute>
+						<attribute vodmlRef="ivoa:RealQuantity.value" name="value">
+							<primitiveValue vodmlRef="ivoa:real">1235.0</primitiveValue>
+						</attribute>
+					</dataObject>
+				</attribute>
+			</object>
+			<object vodmlRef="filter:PhotometryFilter">
+				<identifier>
+					<transientID>-3</transientID>
+				</identifier>
+				<attribute vodmlRef="filter:PhotometryFilter.name" name="name">
+					<primitiveValue vodmlRef="ivoa:string">H</primitiveValue>
+				</attribute>
+				<attribute vodmlRef="filter:PhotometryFilter.bandName" name="bandName">
+					<primitiveValue vodmlRef="ivoa:string">2mass:H</primitiveValue>
+				</attribute>
+				<attribute vodmlRef="filter:PhotometryFilter.spectralLocation" name="spectralLocation">
+					<dataObject vodmlRef="ivoa:RealQuantity">
+						<attribute vodmlRef="ivoa:Quantity.unit" name="unit">
+							<primitiveValue vodmlRef="ivoa:Unit">nm</primitiveValue>
+						</attribute>
+						<attribute vodmlRef="ivoa:RealQuantity.value" name="value">
+							<primitiveValue vodmlRef="ivoa:real">1662.0</primitiveValue>
+						</attribute>
+					</dataObject>
+				</attribute>
+			</object>
+		</collection>
+	</object>
+	<!-- +++++++++ END GROUP[rank=13|vodmlRef=(role=|type=filter:PhotometricSystem):id=_2mass] -->
+</vodmli:instance>
